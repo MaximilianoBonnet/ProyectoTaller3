@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- FORMULARIO -->
+    <div class="contacto-container">
+        <form class="contacto-form" action="" method="post">
+            <h2>Contacto</h2>
+            <div class="input-container">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required maxlength="120" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" />
+            </div>
+            <div class="input-container">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required maxlength="60" />
+            </div>
+            <div class="input-container">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" maxlength="20" />
+            </div>
+            <div class="input-container">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2023 Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
